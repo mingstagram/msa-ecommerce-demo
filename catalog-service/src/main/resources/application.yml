@@ -1,0 +1,37 @@
+server:
+  port: 0 # 0 : 랜덤포트
+  
+spring:
+  application:
+    name: catalog-service
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/ecommerce_catalog_db?serverTimezone=Asia/Seoul
+    username: root
+    password: 1111
+  jpa:
+    hibernate:
+      ddl-auto: update 
+#  cloud:
+#    config:
+#      name: catalog-service
+#  config:
+#    import: optional:configserver:http://localhost:8888 # 구성정보 설정
+    
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka 
+
+logging:
+  level:
+    com.example.catalogservice: DEBUG
+     
+token:
+  expiration_time: 86400000
+  secret: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918b167a9c873fc4bb88c6976e5b5410415bde908bd4dee15dfa81f6f2ab448a918
+    
