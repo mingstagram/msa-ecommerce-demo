@@ -1,8 +1,17 @@
-# 🚀 MSA 기반 eCommerce 플랫폼
+# 🚀 MSA 기반 eCommerce 플랫폼 (개발 중)
+
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.x-green?style=flat)
+![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-ORM-blue?style=flat)
+![Eureka](https://img.shields.io/badge/Eureka-Client-orange?style=flat)
+![MariaDB](https://img.shields.io/badge/MariaDB-Database-blue?style=flat)
+![Kafka](https://img.shields.io/badge/Kafka-Messaging-black?style=flat)
+![Maven](https://img.shields.io/badge/Maven-Build-red?style=flat)
 
 ## 📌 프로젝트 개요
 
 이 프로젝트는 MSA(Microservice Architecture) 기반의 eCommerce 플랫폼을 구현하는 데모 프로젝트입니다. 현재 기본적인 MSA 구조를 갖추고 있으며, 지속적으로 기능을 추가하고 있습니다.
+
+---
 
 ## ✅ 주요 목표
 
@@ -10,6 +19,8 @@
 - 서비스 간 통신 구현
 - 분산 시스템 설계
 - 마이크로서비스 운영 경험
+
+---
 
 ## 📌 기술 스택
 
@@ -26,6 +37,8 @@
 - **Lombok**: 코드 간소화
 - **ModelMapper**: 객체 매핑
 - **Validation**: Bean Validation
+
+---
 
 ## 📌 서비스 구성
 
@@ -51,6 +64,8 @@
 - Kafka 연동 (주문 이벤트 발행)
 - 환경 설정 관리 (health check)
 
+---
+
 ## 📌 개발 예정 기능
 
 - JWT 기반 인증/인가
@@ -61,9 +76,12 @@
 - 주문 상태 관리
 - 결제 시스템 연동
 
+---
+
 ## 📌 Contact
 
-- **이름**: 김민국
-- **이메일**: amgkim21@gmail.com
-- **GitHub**: [github.com/mingstagram](https://github.com/mingstagram)
-- **Tech Blog**: [mingucci.tistory.com](https://mingucci.tistory.com)
+#### ✉️ Email: amgkim21@gmail.com
+
+#### 📌 GitHub: [github.com/mingstagram](https://github.com/mingstagram)
+
+#### 📌 Tech Blog: [mingucci.tistory.com](https://mingucci.tistory.com)
